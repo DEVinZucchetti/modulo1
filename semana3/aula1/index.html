@@ -14,6 +14,33 @@
     <main>
       <p>Estrutura Básica de um documento HTML. &#x1F913;</p>
       <!-- Comentário -->
+
+      <!-- action post exemplo -->
+      <form method="post" action="">
+        <label for="nomePessoa">Exemplo Post</label><br />
+        <input
+          type="text"
+          id="nomePessoa"
+          name="nome-da-pessoa"
+          placeholder="Informe um nome"
+        />
+        <input type="submit" name="Enviar" />
+      </form>
+
+      <!-- action get exemplo para google -->
+      <form method="get" action="https://google.com/search">
+        <label for="termo">Pesquisar no Google</label><br />
+        <input
+          type="text"
+          id="termo"
+          name="q"
+          placeholder="Informe um termo de pesquisa"
+        />
+        <button type="submit">Pesquisar</button>
+      </form>
+
+      <br /><br />
+
       <div>
         <a
           href="https://www.google.com"
@@ -27,10 +54,16 @@
           alt="Tux mascote do Linux."
         />
       </div>
+
       <ul>
-        <li>Arroz</li>
+        <li id="item">Arroz</li>
         <li>Feijão</li>
       </ul>
+
+      <ol>
+        <li>Arroz</li>
+        <li>Feijão</li>
+      </ol>
     </main>
 
     <footer>

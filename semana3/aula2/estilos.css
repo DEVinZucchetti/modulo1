@@ -1,3 +1,18 @@
+/* esta definição será sobrescrita */
+h1 {
+  background-color: plum;
+}
+
+/* totos elementos p dentro de ul */
+ul p {
+  background-color: yellow;
+}
+
+/* totos elementos p diretamente descendente de ul */
+ul > p {
+  background-color: rgb(255, 0, 212);
+}
+
 .fundo-verde {
   background-color: green;
 }

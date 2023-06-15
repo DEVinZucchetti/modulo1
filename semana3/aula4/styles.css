@@ -1,0 +1,5 @@
+/* pseudo elemento raiz dos estilos CSS */
+:root {
+  font-size: 20px;
+  font-family: sans-serif;
+}

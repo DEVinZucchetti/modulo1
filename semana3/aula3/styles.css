@@ -1,3 +1,59 @@
+/* pseudo elemento raiz dos estilos CSS */
+:root {
+  font-size: 20px;
+}
+
+html {
+  height: 100vh;
+}
+
 body {
-  background-color: blueviolet;
+  color: white;
+  background-color: rgba(100, 58, 138);
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  /* font-size: 100px; */
+  /* text-align: center; */
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+th {
+  border: 1px solid;
+}
+td {
+  border: 1px solid;
+}
+
+#bloco {
+  width: 50%;
+  height: 50vh;
+  background-color: rgba(41, 128, 99, 0.9);
+  /* background-image: url(https://gabrielgs.files.wordpress.com/2008/04/tux.png); */
+  /* background: url(https://gabrielgs.files.wordpress.com/2008/04/tux.png)
+    rgb(41, 128, 99); */
+  font-size: 20px;
+}
+
+#bloco p {
+  font-size: 2rem;
+}
+
+#bloco div {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: lower-roman;
 }

@@ -20,29 +20,25 @@ th,
 td {
   border: 1px solid;
 }
-
 table {
   border-collapse: collapse;
-  border: 1px solid;
-}
-th {
-  border: 1px solid;
-}
-td {
-  border: 1px solid;
 }
 
 #bloco {
-  width: 50%;
-  height: 50vh;
-  background-color: rgba(41, 128, 99, 0.9);
+  margin: 30px;
+  border: 20px solid pink;
+  padding: 80px 60px 40px 20px;
+  width: 200px;
+  height: 25vh;
+  box-sizing: border-box;
+  /* background-color: rgba(94, 202, 166, 0.9); */
   /* background-image: url(https://gabrielgs.files.wordpress.com/2008/04/tux.png); */
   /* background: url(https://gabrielgs.files.wordpress.com/2008/04/tux.png)
     rgb(41, 128, 99); */
   font-size: 20px;
 }
 
-#bloco p {
+#bloco * {
   font-size: 2rem;
 }
 

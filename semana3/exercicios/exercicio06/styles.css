@@ -1,5 +1,6 @@
 :root {
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 html,
@@ -36,6 +37,12 @@ body {
 }
 
 header,
+main,
+footer {
+  padding: 16px;
+}
+
+header,
 footer {
   display: flex;
   justify-content: space-between;
@@ -44,8 +51,24 @@ footer {
   background-color: #000080;
 }
 
+.logo-text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
 nav > a {
   color: #fff;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  text-decoration: underline;
 }
 
 main {

@@ -34,7 +34,19 @@ main {
 }
 
 a {
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   position: absolute;
+}
+
+ol.lista {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  /* flex-direction: column; */
+}
+
+ol.lista li {
+  background-color: aquamarine;
 }

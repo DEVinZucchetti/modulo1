@@ -1,0 +1,53 @@
+:root {
+  font-family: sans-serif;
+}
+
+html,
+body,
+div,
+header,
+main,
+footer,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #000080;
+}
+
+nav > a {
+  color: #fff;
+}
+
+main {
+  flex: 1;
+}

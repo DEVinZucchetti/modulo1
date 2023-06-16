@@ -3,3 +3,38 @@
   font-size: 20px;
   font-family: sans-serif;
 }
+
+[href="https://google.com"]
+{
+  background-color: orange;
+}
+
+ol:hover {
+  background-color: blueviolet;
+}
+
+input:focus {
+  outline-color: red;
+}
+
+p:first-child {
+  background-color: lightgreen;
+}
+
+p::before {
+  content: "😎";
+}
+
+p:not(:first-child) {
+  background-color: chocolate;
+}
+
+main {
+  position: relative;
+}
+
+a {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}

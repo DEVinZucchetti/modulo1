@@ -154,3 +154,35 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+form {
+  width: 1046px;
+  /* Exemplo de uso de calc */
+  max-width: calc(100vw - 64px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: navy;
+  font-weight: bold;
+}
+
+form input {
+  border-color: gray;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+}
+
+form button[type="submit"] {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

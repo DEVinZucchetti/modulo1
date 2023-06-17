@@ -105,6 +105,7 @@ main {
   /* border-width: 1px; */
   /* border-style: solid; */
   /* border-color: navy; */
+  background-color: white;
 }
 
 #cards-container > li > img {
@@ -164,6 +165,7 @@ form {
   gap: 16px;
   color: navy;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 
 form input {
@@ -176,6 +178,10 @@ form input[type="text"] {
   flex-grow: 1;
 }
 
+form input[type="date"] {
+  min-width: 128px;
+}
+
 form button[type="submit"] {
   padding: 8px 16px;
   border-radius: 8px;
@@ -185,4 +191,11 @@ form button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Exemplo de estilo condifional com largura da tela */
+@media (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
 }

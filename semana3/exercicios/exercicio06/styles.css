@@ -52,7 +52,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  background-color: #000080;
+  background-color: navy;
 }
 
 .logo-text {
@@ -101,10 +101,10 @@ main {
   flex-direction: column;
   border-radius: 16px;
   /* Equivalente */
-  border: 1px solid #000080;
+  border: 1px solid navy;
   /* border-width: 1px; */
   /* border-style: solid; */
-  /* border-color: #000080; */
+  /* border-color: navy; */
 }
 
 #cards-container > li > img {
@@ -119,5 +119,38 @@ main {
   font-size: 1.2rem;
   font-weight: normal;
   font-style: italic;
-  color: #000080;
+  color: navy;
+}
+
+#cards-container > li > .card-details {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+#cards-container > li > .card-details > .price {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#cards-container > li > .card-details > .price > h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+#cards-container > li > .card-details > .price > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#cards-container > li > .card-details > a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

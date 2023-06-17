@@ -9,6 +9,7 @@ div,
 header,
 main,
 footer,
+form,
 p,
 span,
 h1,
@@ -17,7 +18,10 @@ h3,
 h4,
 h5,
 h6,
-a {
+a,
+ul,
+ol,
+li {
   margin: 0;
   border: 0;
   padding: 0;
@@ -73,4 +77,47 @@ nav > a:hover {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#cards-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+#cards-container > li {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  flex-direction: column;
+  border-radius: 16px;
+  /* Equivalente */
+  border: 1px solid #000080;
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  /* border-color: #000080; */
+}
+
+#cards-container > li > img {
+  width: 320px;
+  border-radius: 8px;
+  aspect-ratio: 4/3;
+  display: block;
+  background-color: #e8e8e8;
+}
+
+#cards-container > li > h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #000080;
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exercicio 04</title>
+  </head>
+  <body>
+    <h1>Formulário de cadastro</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Preencha os dados</legend>
+
+        <div id="blue-container">
+          <div id="form-column">
+            <div class="field-box">
+              <label for="campo-nome">Nome:</label>
+              <input type="text" id="campo-nome" name="nome" />
+            </div>
+
+            <div class="field-box">
+              <label for="campo-nascimento">Data de Nascimento:</label>
+              <input type="date" id="campo-nascimento" name="nascimento" />
+            </div>
+
+            <div class="field-box">
+              <label for="campo-cpf">CPF:</label>
+              <input type="text" id="campo-cpf" name="cpf" />
+            </div>
+
+            <div class="field-box">
+              <label for="campo-municipio">Município</label>
+              <select type="text" id="campo-municipio" name="municipio">
+                <option value="" disabled selected>Selecione</option>
+                <option value="dona-francisca_rs">Dona Francisca - RS</option>
+                <option value="florianopolis_sc">Florianópolis - SC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

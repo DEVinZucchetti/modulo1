@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;
+}
+
+form {
+  text-align: left;
+}
+
+fieldset {
+  padding: 16px;
+}
+
+#blue-container {
+  padding: 16px;
+  background-color: #d6eaf8;
+}
+
+#form-column {
+  margin: auto;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-box {
+  display: flex;
+  gap: 8px;
+}
+
+.field-box label {
+  width: 140px;
+}
+
+.field-box input,
+.field-box select {
+  flex-grow: 1;
+}

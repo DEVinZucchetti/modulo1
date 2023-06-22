@@ -1,0 +1,98 @@
+:root {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a {
+  color: red;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header select,
+header button {
+  height: 27px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+header select {
+  background-color: transparent;
+}
+
+header select option {
+  color: #000;
+}
+
+header button {
+  border: none;
+  background-color: red;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main section {
+  border-width: 2px 0 0 0;
+  border-color: #2c3e50;
+  border-style: solid;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(23, 32, 42, 1) 100%
+  );
+}
+
+main section:last-child {
+  border-bottom-width: 2px;
+}
+
+footer {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div > a {
+  color: #aaa;
+  text-decoration: none;
+}

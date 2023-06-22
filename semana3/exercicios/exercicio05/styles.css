@@ -3,7 +3,18 @@
 }
 
 html,
-body {
+body,
+div,
+header,
+main,
+footer,
+h1,
+h2,
+p,
+a,
+span,
+ul,
+li {
   margin: 0;
   border: 0;
   padding: 0;
@@ -13,10 +24,14 @@ body {
   min-height: 100vh;
   text-align: center;
   background-color: #000;
-  color: #fff;
+  color: #f0f8ff;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 header {
@@ -63,6 +78,9 @@ main {
 }
 
 main section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
   border-width: 2px 0 0 0;
   border-color: #2c3e50;
   border-style: solid;
@@ -76,6 +94,32 @@ main section {
 
 main section:last-child {
   border-bottom-width: 2px;
+}
+
+main section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+main section > div img {
+  height: 140px;
+}
+
+.list-box {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.list-box li {
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #303030;
 }
 
 footer {

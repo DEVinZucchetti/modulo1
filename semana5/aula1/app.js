@@ -18,3 +18,18 @@ console.log(retorno);
 (function () {
   console.log("Funcao de uso unico!");
 })();
+
+// comparação arrow function
+function funcaoComum(a) {
+  return "Funcao comum. " + a;
+}
+
+console.log(funcaoComum("Romeu"));
+
+const funcaoArrow = (a) => {
+  return "Funcao arrow. " + a;
+};
+// equivalente a
+//const funcaoArrow = a => "Funcao arrow. " + a;
+
+console.log(funcaoArrow("Isaac"));

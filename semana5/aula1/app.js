@@ -12,11 +12,11 @@ function f(x, y) {
 }
 
 const retorno = f(2, 3);
-console.log(retorno);
+//console.log(retorno);
 
 // exemplo função efemera
 (function () {
-  console.log("Funcao de uso unico!");
+  //console.log("Funcao de uso unico!");
 })();
 
 // comparação arrow function
@@ -24,12 +24,24 @@ function funcaoComum(a) {
   return "Funcao comum. " + a;
 }
 
-console.log(funcaoComum("Romeu"));
+//console.log(funcaoComum("Romeu"));
 
 const funcaoArrow = (a) => {
   return "Funcao arrow. " + a;
 };
 // equivalente a
 //const funcaoArrow = a => "Funcao arrow. " + a;
+//console.log(funcaoArrow("Isaac"));
 
-console.log(funcaoArrow("Isaac"));
+function executaEssa(funcaoExterna) {
+  const retorno = funcaoExterna(3);
+  console.log(retorno);
+}
+
+// exemplo equivalencias
+// funcao comum passada por parametro
+executaEssa(function (a) {
+  return a * 2;
+});
+// arrow funcation passada por parametro
+executaEssa((a) => a * 2);

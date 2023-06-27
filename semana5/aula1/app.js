@@ -12,5 +12,9 @@ function f(x, y) {
 }
 
 const retorno = f(2, 3);
-
 console.log(retorno);
+
+// exemplo função efemera
+(function () {
+  console.log("Funcao de uso unico!");
+})();

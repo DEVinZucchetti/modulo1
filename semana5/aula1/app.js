@@ -45,3 +45,15 @@ executaEssa(function (a) {
 });
 // arrow funcation passada por parametro
 executaEssa((a) => a * 2);
+
+// maneira depreciada de declarar variaveis
+var a = 5; // pode ser reatribuida
+
+// padrao atual de declaração de variáveis
+const b = 6; // não pode ser reatribuida
+let c = 7; // pode ser reatribuida
+
+a = 9;
+c = 8;
+
+console.log(a, b, c);

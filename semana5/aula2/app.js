@@ -1,3 +1,15 @@
+// "USE STRICT"
+"use strict";
+// scripts de tipo modulo, possuem automaticamente
+// escopo USE STRICT
+// <script src="app.js" type="module"></script>
+// sem a necessidade de declarar no inicio do arquivo
+
+// use strict impede que variaveis não explicitamente
+// definidas sejam usadas
+//hahahaDeRaioLaser = "batata";
+//console.log(hahahaDeRaioLaser);
+
 console.log("m1s05a2");
 
 // VARIAVEL SIMPLES
@@ -79,7 +91,15 @@ if (true) {
 // e também escopo de funcao
 if (true) {
   const comprimento = 111;
-  console.log(comprimento);
+  //console.log(comprimento);
 }
 // erro pois comprimento nao existe fora do bloco
 //console.log(comprimento);
+
+// HOISTING/IÇAMENTO
+// "sobe" a definição de funcoes e vars
+// para poder utilizar antes da definição
+//teste();
+function teste() {
+  console.log("TESTE_EXECUTOU");
+}

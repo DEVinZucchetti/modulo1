@@ -103,3 +103,16 @@ if (true) {
 function teste() {
   console.log("TESTE_EXECUTOU");
 }
+
+// REST
+function calcula(a, b, ...batata) {
+  console.log(a, b, batata);
+}
+//calcula(1, 3, 8, 2, 6);
+
+// SPREAD
+const exemploSpread = [4, 5, 6, 7, 9];
+
+calcula(...exemploSpread);
+// equivalente à
+calcula(4, 5, 6, 7, 9);

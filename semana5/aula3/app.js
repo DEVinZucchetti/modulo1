@@ -111,5 +111,55 @@ listaB.push("manga");
 
 // forEach com arrow function
 listaB.forEach((item, indice, lista) => {
-  console.log(item, indice, lista);
+  //console.log(item, indice, lista);
 });
+
+// Exemplo template literals
+const nome = "Romeu";
+const textoA = "Olá, " + nome + "!";
+const textoB = `Olá, ${nome}!`;
+
+//console.log(textoA);
+//console.log(textoB);
+
+// Mais REST & SPREAD com variáveis
+
+// vetores SPREAD
+const vetA = [1, 2, 3];
+const vetB = [4, 5, 6];
+
+const vetC = [0, ...vetB, 9, ...vetA];
+
+//console.log(vetC);
+
+// objetos SPREAD
+const objA = { a: 1, b: 2, c: 3 };
+const objB = { c: 24, d: 25, e: 26 };
+
+const objC = { ...objA, ...objB, a: 999 };
+
+//console.log(objC);
+
+// vetor DESTRUCTURING
+
+const coordA = [4, 7, 8];
+
+// const x = coordA[0];
+// const y = coordA[1];
+// const z = coordA[2];
+
+const [xx, yy, zz] = coordA;
+
+//console.log(x, y, z);
+
+// objeto DESTRUCTURING
+
+const coordB = { x: 4, y: 7, z: 8 };
+
+// const x = coordA.x;
+// const y = coordA.y;
+// const z = coordA.z;
+
+const { x, y, z } = coordB;
+
+console.log(x, y, z);

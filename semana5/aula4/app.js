@@ -55,3 +55,11 @@ pessoas.forEach((item) => {
 
   elementoLista.appendChild(elementoItem);
 });
+
+// exemplo map
+// map cria um novo array com os returns de cada volta
+const resultado = pessoas.map(({ id, nome, idade }) => {
+  return `Id: ${id} Nome: ${nome} Idade:${idade}`;
+});
+
+console.log(resultado);

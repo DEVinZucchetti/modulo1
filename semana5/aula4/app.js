@@ -84,7 +84,23 @@ const encontrado = pessoas.find((item) => {
 });
 
 if (encontrado) {
-  console.log(encontrado);
+  //console.log(encontrado);
 } else {
-  console.log("não encontrado");
+  //console.log("não encontrado");
 }
+
+// exemplo every
+// testa se todos elementos satisfazem a condição da função
+const todosSatisfazem = pessoas.every((item) => {
+  return item.idade > 30;
+});
+
+console.log({ todosSatisfazem });
+
+// exemplo some
+// testa se ao menos um elemento satisfaz a condição da função
+const algumSatisfaz = pessoas.some((item) => {
+  return item.idade > 30;
+});
+
+console.log({ algumSatisfaz });

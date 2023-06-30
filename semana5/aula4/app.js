@@ -127,3 +127,32 @@ const simInclui = palavras.includes("arroz");
 //console.log({ simInclui });
 
 // exemplo reduce
+
+const numeros = [5, 78, 1, 34];
+
+// let total = 0;
+// numeros.forEach((num) => total += num);
+
+function funcRedutora(acumulador, num) {
+  return acumulador + num;
+}
+
+const total = numeros.reduce(funcRedutora, 0);
+
+//console.log({ total });
+
+// exemplo reduce como map
+const pessoasReduzidas = pessoas.reduce((acc, pessoa) => {
+  return [...acc, pessoa.nome];
+}, []);
+
+//console.log({ pessoasReduzidas });
+
+// exemplo reduce como map
+const pessoasObjeto = pessoas.reduce((acc, pessoa) => {
+  return { ...acc, [pessoa.nome]: pessoa };
+}, {});
+
+console.log({ pessoasObjeto });
+
+console.log(pessoasObjeto.Romeu);

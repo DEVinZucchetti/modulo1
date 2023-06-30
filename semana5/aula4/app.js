@@ -49,10 +49,11 @@ for (let item of pessoas) {
 // equivalente a
 pessoas.forEach((item) => {
   const { id, nome, idade } = item;
+  // cria um elemento HTML
   const elementoItem = document.createElement("li");
-
+  // modifica o HTML interno do elemento
   elementoItem.innerHTML = `Id: ${id} Nome: ${nome} Idade:${idade}`;
-
+  // coloca o elemento dentro da lista na página
   elementoLista.appendChild(elementoItem);
 });
 
@@ -62,4 +63,28 @@ const resultado = pessoas.map(({ id, nome, idade }) => {
   return `Id: ${id} Nome: ${nome} Idade:${idade}`;
 });
 
-console.log(resultado);
+//console.log(resultado);
+
+const termoDePesquisa = "a";
+
+// exemplo filter
+const filtrado = pessoas.filter(({ nome }) => {
+  return nome.includes(termoDePesquisa);
+});
+
+if (filtrado.length) {
+  //console.log(filtrado);
+} else {
+  //console.log("nada filtrado");
+}
+
+// exemplo find
+const encontrado = pessoas.find((item) => {
+  return item.id === 2;
+});
+
+if (encontrado) {
+  console.log(encontrado);
+} else {
+  console.log("não encontrado");
+}

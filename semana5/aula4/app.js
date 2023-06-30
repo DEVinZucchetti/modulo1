@@ -79,6 +79,7 @@ if (filtrado.length) {
 }
 
 // exemplo find
+// encontra um item a partir de uma condição
 const encontrado = pessoas.find((item) => {
   return item.id === 2;
 });
@@ -89,13 +90,26 @@ if (encontrado) {
   //console.log("não encontrado");
 }
 
+// exemplo findIndex
+// encontra um item a partir de uma condição
+const indiceEncontrado = pessoas.findIndex((item) => {
+  return item.id === 2;
+});
+
+if (indiceEncontrado >= 0) {
+  //console.log(indiceEncontrado);
+} else {
+  //console.log("índice não encontrado");
+  //console.log({ indiceEncontrado });
+}
+
 // exemplo every
 // testa se todos elementos satisfazem a condição da função
 const todosSatisfazem = pessoas.every((item) => {
   return item.idade > 30;
 });
 
-console.log({ todosSatisfazem });
+//console.log({ todosSatisfazem });
 
 // exemplo some
 // testa se ao menos um elemento satisfaz a condição da função
@@ -103,4 +117,13 @@ const algumSatisfaz = pessoas.some((item) => {
   return item.idade > 30;
 });
 
-console.log({ algumSatisfaz });
+//console.log({ algumSatisfaz });
+
+// exemplo includes
+const palavras = ["feijao", "arroz", "beterraba"];
+
+const simInclui = palavras.includes("arroz");
+
+//console.log({ simInclui });
+
+// exemplo reduce

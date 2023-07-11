@@ -7,3 +7,4 @@ Esta é uma lista exemplo:
 - Arroz
 - Feijão
 - Batata
+- macarão

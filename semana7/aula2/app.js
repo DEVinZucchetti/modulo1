@@ -1,4 +1,4 @@
-import Pessoa from "./Pessoa.js";
+//import Pessoa from "./Pessoa.js";
 
 console.log("m1_s07_a2");
 
@@ -14,16 +14,19 @@ function PessoaFunc(nome, idade) {
 }
 
 // equivalente em classe
-// class Pessoa {
-//   constructor(nome, idade) {
-//     this.nome = nome;
-//     this.idade = idade;
-//   }
+class Pessoa {
+  nome;
+  #idade;
 
-//   mostraIdade() {
-//     console.log(this.idade);
-//   }
-// }
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.#idade = idade;
+  }
+
+  mostraIdade() {
+    console.log(this.#idade);
+  }
+}
 
 // const romeu = PessoaFunc("Romeu", 30);
 // const isaac = PessoaFunc("Isaac", 29);
@@ -35,3 +38,7 @@ console.log(isaac);
 
 romeu.mostraIdade();
 isaac.mostraIdade();
+
+//romeu.#idade = 99999999999999;
+
+//console.log(romeu.#idade);

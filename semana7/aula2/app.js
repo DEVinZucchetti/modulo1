@@ -1,4 +1,4 @@
-//import Pessoa from "./Pessoa.js";
+import Pessoa from "./Pessoa.js";
 
 console.log("m1_s07_a2");
 
@@ -12,24 +12,13 @@ function PessoaFunc(nome, idade) {
     },
   };
 }
-
-// equivalente em classe
-class Pessoa {
-  nome;
-  #idade;
-
-  constructor(nome, idade) {
-    this.nome = nome;
-    this.#idade = idade;
-  }
-
-  mostraIdade() {
-    console.log(this.#idade);
-  }
-}
+// maneira equivalente utilizando classes
+// disponível no arquivo Pessoa.js
 
 // const romeu = PessoaFunc("Romeu", 30);
 // const isaac = PessoaFunc("Isaac", 29);
+
+// criando instancias de Pessoa
 const romeu = new Pessoa("Romeu", 30);
 const isaac = new Pessoa("Isaac", 29);
 

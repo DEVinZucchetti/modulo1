@@ -14,9 +14,7 @@ class Item {
 
   criaItem() {
     const li = document.createElement("li");
-    li.innerHTML = `
-      <p>${this.titulo}</p>
-    `;
+    li.innerHTML = `<p>${this.titulo}</p>`;
 
     if (this.tipo === "tarefa") {
       const checkbox = document.createElement("input");

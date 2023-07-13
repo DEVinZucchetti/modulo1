@@ -8,12 +8,12 @@ export const dadosLista = [
     id: 2,
     titulo: "Arroz",
     tipo: "tarefa",
-    estado: true,
+    concluida: true,
   },
   {
     id: 3,
     titulo: "Ervilha",
     tipo: "tarefa",
-    estado: false,
+    concluida: false,
   },
 ];

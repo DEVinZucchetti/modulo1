@@ -1,4 +1,5 @@
 import Item from "./Item.js";
+import ItemTarefa from "./ItemTarefa.js";
 import { dadosLista } from "./dados.js";
 
 console.log("m1_s07_a3");
@@ -8,7 +9,13 @@ let listaControle = [];
 
 function criaInstanciasItens(lista) {
   return lista.map((item) => {
-    return new Item(item);
+    switch (item.tipo) {
+      case "tarefa":
+        return new ItemTarefa(item);
+
+      default:
+        return new Item(item);
+    }
   });
 }
 
@@ -26,4 +33,5 @@ function atualizaTela() {
   // inicialização da nossa aplicação
   listaControle = criaInstanciasItens(dadosLista);
   atualizaTela();
+  console.log(listaControle);
 })();

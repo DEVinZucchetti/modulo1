@@ -1,0 +1,76 @@
+:root {
+  font-family: sans-serif;
+}
+
+html,
+body,
+header,
+main,
+footer,
+div,
+form,
+ul,
+li,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 160px;
+  min-height: 100vh;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+main {
+  max-width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+form > div {
+  display: flex;
+  gap: 4px;
+}
+
+form > div input,
+form > div select,
+form > div button {
+  flex-grow: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+ul {
+  width: 320px;
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+li {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}

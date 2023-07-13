@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m1_s07_a4</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">M1-S07-A4</h1>
+      <p>Lista personalizada</p>
+    </header>
+
+    <main>
+      <form id="formulario">
+        <div>
+          <label for="titulo-item">Título</label>
+          <input type="text" id="titulo-item" name="titulo" required />
+        </div>
+
+        <div>
+          <label for="tipo-item">Tipo</label>
+          <select id="tipo-item" name="tipo">
+            <option value="nota">Nota</option>
+            <option value="tarefa">Tarefa</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <ul id="lista-itens">
+        <!-- preenchido dinamicamente pelo javascript -->
+      </ul>
+    </main>
+
+    <footer>DiH &middot; 2023</footer>
+  </body>
+</html>

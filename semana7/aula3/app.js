@@ -4,6 +4,7 @@ import { dadosLista } from "./dados.js";
 
 console.log("m1_s07_a3");
 
+const elemFormulario = document.querySelector("#formulario");
 const elemLista = document.getElementById("lista-itens");
 let listaControle = [];
 
@@ -28,10 +29,19 @@ function atualizaTela() {
   });
 }
 
+function processaSubmit(evento) {
+  // prevenir a execução do comportamento padrão de submit
+  evento.preventDefault();
+
+  console.log("SUBMETEU");
+}
+
 // função anônima de uso único
 (function () {
   // inicialização da nossa aplicação
   listaControle = criaInstanciasItens(dadosLista);
   atualizaTela();
   console.log(listaControle);
+  // adiciona escutadores de eventos
+  elemFormulario.addEventListener("submit", processaSubmit);
 })();

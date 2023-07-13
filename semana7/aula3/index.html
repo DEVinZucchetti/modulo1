@@ -16,8 +16,19 @@
 
     <main>
       <form id="formulario">
-        <label for="titulo-item">Titulo</label>
-        <input type="text" id="titulo-item" name="titulo" />
+        <div>
+          <label for="titulo-item">Titulo</label>
+          <input type="text" id="titulo-item" name="titulo" />
+        </div>
+
+        <div>
+          <label for="tipo-item">Tipo</label>
+          <select id="tipo-item" name="tipo">
+            <option value="nota">Nota</option>
+            <option value="tarefa">Tarefa</option>
+          </select>
+        </div>
+
         <button type="submit">Adiciona</button>
       </form>
 

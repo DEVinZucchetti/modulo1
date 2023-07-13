@@ -35,6 +35,22 @@ main {
   gap: 8px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+form > div {
+  display: flex;
+  gap: 4px;
+}
+
+form > div input,
+form > div select {
+  flex-grow: 1;
+}
+
 ul {
   width: 320px;
   max-width: 100%;

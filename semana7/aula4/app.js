@@ -68,4 +68,9 @@ function processaSubmit(evento) {
   atualizaTela();
   // adiciona escutadores de eventos
   elemFormulario.addEventListener("submit", processaSubmit);
+
+  // const instanciaItem = listaControle[1];
+  // console.log({ instanciaItem, Item });
+  // console.log(Item.isItem(instanciaItem));
+  // console.log(Item.isItem(344343));
 })();

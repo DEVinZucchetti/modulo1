@@ -17,8 +17,8 @@
     <main>
       <form id="formulario">
         <div>
-          <label for="titulo-item">Titulo</label>
-          <input type="text" id="titulo-item" name="titulo" />
+          <label for="titulo-item">Título</label>
+          <input type="text" id="titulo-item" name="titulo" required />
         </div>
 
         <div>
@@ -29,7 +29,10 @@
           </select>
         </div>
 
-        <button type="submit">Adiciona</button>
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Adicionar</button>
+        </div>
       </form>
 
       <ul id="lista-itens">

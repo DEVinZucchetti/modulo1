@@ -47,7 +47,8 @@ form > div {
 }
 
 form > div input,
-form > div select {
+form > div select,
+form > div button {
   flex-grow: 1;
 }
 
@@ -64,4 +65,7 @@ li {
   border: 1px solid gray;
   border-radius: 4px;
   padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
 }

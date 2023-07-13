@@ -20,8 +20,8 @@ function criaInstanciaItem(dadosItem) {
   }
 }
 
-function populaListaControle(lista) {
-  return lista.map(criaInstanciaItem);
+function populaListaControle(listaCrua) {
+  listaControle = listaCrua.map(criaInstanciaItem);
 }
 
 function atualizaTela() {
@@ -60,11 +60,12 @@ function processaSubmit(evento) {
 }
 
 // função anônima de uso único
+// inicialização da nossa aplicação
 (function () {
-  // inicialização da nossa aplicação
-  listaControle = populaListaControle(dadosLista);
+  // popula lista de controle
+  populaListaControle(dadosLista);
+  // atualiza a tela
   atualizaTela();
-  console.log(listaControle);
   // adiciona escutadores de eventos
   elemFormulario.addEventListener("submit", processaSubmit);
 })();

@@ -24,11 +24,17 @@ function populaListaControle(listaCrua) {
   listaControle = listaCrua.map(criaInstanciaItem);
 }
 
+function removeItemPorId(idItem) {
+  console.log("REMOVE", { idItem });
+  listaControle = listaControle.filter((item) => item.id !== idItem);
+  atualizaTela();
+}
+
 function atualizaTela() {
   elemLista.innerHTML = "";
 
   listaControle.forEach((item) => {
-    const elemItem = item.criaItem();
+    const elemItem = item.criaItem(removeItemPorId);
     elemLista.appendChild(elemItem);
   });
 }
@@ -69,8 +75,10 @@ function processaSubmit(evento) {
   // adiciona escutadores de eventos
   elemFormulario.addEventListener("submit", processaSubmit);
 
-  // const instanciaItem = listaControle[1];
-  // console.log({ instanciaItem, Item });
+  const instanciaItem = listaControle[1];
+  console.log({ instanciaItem, Item });
   // console.log(Item.isItem(instanciaItem));
   // console.log(Item.isItem(344343));
+
+  console.log(instanciaItem.id);
 })();

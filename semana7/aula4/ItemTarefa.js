@@ -9,15 +9,15 @@ class ItemTarefa extends Item {
     this.concluida = concluida;
   }
 
-  criaItem() {
-    const li = document.createElement("li");
-    li.innerHTML = `<p>${this.titulo}</p>`;
+  criaItem(onRemove) {
+    const li = super.criaItem(onRemove);
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = this.concluida;
 
-    li.appendChild(checkbox);
+    const p = li.querySelector("p");
+    p.appendChild(checkbox);
     return li;
   }
 }

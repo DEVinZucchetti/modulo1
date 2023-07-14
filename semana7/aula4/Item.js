@@ -13,13 +13,13 @@ class Item {
   }
 
   // recebe uma função "callback" por parâmetro
-  criaItem(onRemove) {
+  criaItem() {
     const li = document.createElement("li");
     li.innerHTML = `<p>${this.titulo}</p>`;
 
     const botao = document.createElement("button");
+    botao.className = "botao-remover";
     botao.innerHTML = "🗑️";
-    botao.addEventListener("click", () => onRemove(this.id));
 
     li.appendChild(botao);
     return li;

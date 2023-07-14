@@ -9,8 +9,9 @@ class ItemTarefa extends Item {
     this.concluida = concluida;
   }
 
-  criaItem(onRemove) {
-    const li = super.criaItem(onRemove);
+  criaItem() {
+    // aproveita código de criaItem superior
+    const li = super.criaItem();
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";

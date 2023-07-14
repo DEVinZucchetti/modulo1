@@ -16,6 +16,10 @@ class ItemTarefa extends Item {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = this.concluida;
+    checkbox.addEventListener("change", () => {
+      // inverte o valor da bandeira concluida
+      this.concluida = !this.concluida;
+    });
 
     const p = li.querySelector("p");
     p.appendChild(checkbox);

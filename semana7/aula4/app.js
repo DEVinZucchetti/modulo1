@@ -78,9 +78,11 @@ function processaSubmit(evento) {
   // adiciona escutadores de eventos
   elemFormulario.addEventListener("submit", processaSubmit);
 
-  //const instanciaItem = listaControle[1];
-  //console.log({ instanciaItem, Item });
+  // const instanciaItem = listaControle[1];
+  // console.log({ instanciaItem, Item });
   // console.log(Item.isItem(instanciaItem));
   // console.log(Item.isItem(344343));
-  //console.log(instanciaItem.id);
+  // instanciaItem.id = 99999999999;
+  // console.log(instanciaItem.id);
+  // console.log(listaControle);
 })();

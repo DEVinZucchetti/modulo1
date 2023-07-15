@@ -35,7 +35,7 @@ class Colaborador {
     if (resto === 10 || resto === 11) {
       resto = 0;
     }
-    if (resto != parseInt(strCPF.substring(9, 10))) {
+    if (resto !== parseInt(strCPF.substring(9, 10))) {
       return false;
     }
     soma = 0;
@@ -46,7 +46,7 @@ class Colaborador {
     if (resto === 10 || resto === 11) {
       resto = 0;
     }
-    if (resto != parseInt(strCPF.substring(10, 11))) {
+    if (resto !== parseInt(strCPF.substring(10, 11))) {
       return false;
     }
     return true;
